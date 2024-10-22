@@ -12,7 +12,7 @@ class DoctorInfoCard extends StatelessWidget {
     this.rating,
     this.views,
   });
-String doctorImage;
+  String doctorImage;
   String doctorName;
   String doctorSpeciality;
   double? rating;
@@ -71,18 +71,16 @@ String doctorImage;
                       Text(
                         'دكتور $doctorName',
                         style: const TextStyle(
-                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(height: 4),
+                      const SizedBox(height: 6),
 
                       // التخصص
                       Text(
                         doctorSpeciality,
                         style: const TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -103,14 +101,14 @@ String doctorImage;
                       'الكشف بمواعيد محددة',
                       style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     const SizedBox(width: 50),
 
                     // تقييم
-                    const Icon(Icons.star, color: Colors.amber, size: 18),
+                    const Icon(Icons.star_rate_rounded,
+                        color: Color(0xffFFEA00), size: 18),
                     const SizedBox(width: 10),
                     Text(
                       '$rating',
@@ -130,7 +128,6 @@ String doctorImage;
                       '$views',
                       style: const TextStyle(
                         color: Colors.grey,
-                        fontSize: 14,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -144,8 +141,7 @@ String doctorImage;
             const Text(
               'اسم الفرع',
               style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],

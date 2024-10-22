@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
                   // عنوان -- أفضل اطباءنا
                   const Text(
                     'أفضل أطبائنا',
-                    style: TextStyle(fontSize: 22),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
@@ -123,7 +123,7 @@ class HomePage extends StatelessWidget {
               // فروعنا
               const Text(
                 'فروعنا',
-                style: TextStyle(fontSize: 22),
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 12),
               // الفروع

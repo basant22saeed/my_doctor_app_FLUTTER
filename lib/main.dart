@@ -14,15 +14,16 @@ class MyApp extends StatelessWidget {
       textDirection: TextDirection.rtl,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-    
         theme: ThemeData(
+          fontFamily: 'Noto',
           scaffoldBackgroundColor: Colors.white,
           appBarTheme: const AppBarTheme(
-            centerTitle: true,
-              backgroundColor: Colors.transparent, elevation: 0),
+              centerTitle: true,
+              backgroundColor: Colors.transparent,
+              elevation: 0),
           useMaterial3: true,
         ),
-        home:  HomePage(),
+        home: const HomePage(),
       ),
     );
   }

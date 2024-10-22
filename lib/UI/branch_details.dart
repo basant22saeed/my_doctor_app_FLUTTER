@@ -33,7 +33,7 @@ class BranchDetails extends StatelessWidget {
               const SizedBox(height: 16),
               BranchDetailsTile(
                   detailTitle: 'عدد ساعات العمل',
-                  detailSubtitle: 'متاح دائمًا'),
+                  detailSubtitle: 'متاح دائما'),
               const Divider(),
               const SizedBox(height: 16),
               BranchDetailsTile(

@@ -21,6 +21,7 @@ class DoctorInfoDetails extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        const SizedBox(height: 20),
         Row(
           children: [
             // صورة الدكتور
@@ -61,7 +62,7 @@ class DoctorInfoDetails extends StatelessWidget {
                   Text(
                     doctorSpeciality,
                     style: const TextStyle(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
                   ),
@@ -70,11 +71,16 @@ class DoctorInfoDetails extends StatelessWidget {
                   // نجوم التقييم
                   const Row(
                     children: [
-                      Icon(Icons.star_rounded, color: Colors.yellow, size: 24),
-                      Icon(Icons.star_rounded, color: Colors.yellow, size: 24),
-                      Icon(Icons.star_rounded, color: Colors.yellow, size: 24),
-                      Icon(Icons.star_rounded, color: Colors.yellow, size: 24),
-                      Icon(Icons.star_rounded, color: Colors.yellow, size: 24),
+                      Icon(Icons.star_rounded,
+                          color: Color(0xffFFEA00), size: 24),
+                      Icon(Icons.star_rounded,
+                          color: Color(0xffFFEA00), size: 24),
+                      Icon(Icons.star_rounded,
+                          color: Color(0xffFFEA00), size: 24),
+                      Icon(Icons.star_rounded,
+                          color: Color(0xffFFEA00), size: 24),
+                      Icon(Icons.star_rounded,
+                          color: Color(0xffFFEA00), size: 24),
                     ],
                   ),
                   const SizedBox(height: 5),
@@ -82,7 +88,8 @@ class DoctorInfoDetails extends StatelessWidget {
                   // التقييم زوار
                   Text(
                     'التقييم العام من $visitorRating زائر',
-                    style: const TextStyle(color: Color(0xff669AE9)),
+                    style: const TextStyle(
+                        color: Color(0xff2BACFA), fontWeight: FontWeight.bold),
                   )
                 ],
               ),

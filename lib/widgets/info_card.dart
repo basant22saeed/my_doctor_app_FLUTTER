@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -13,16 +15,16 @@ class InfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Stack(children: [
-          Padding(
-            padding:
-                const EdgeInsets.only(left: 12, right: 12, top: 16, bottom: 50),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Stack(children: [
+        Padding(
+          padding:
+              const EdgeInsets.only(left: 12, right: 10, top: 16, bottom: 50),
+          child: Directionality(
+            textDirection: TextDirection.rtl,
             child: Column(children: [
               // العنوان
               const SizedBox(height: 15),
@@ -32,7 +34,7 @@ class InfoCard extends StatelessWidget {
                   cardTitle,
                   style: const TextStyle(
                     fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
@@ -51,8 +53,8 @@ class InfoCard extends StatelessWidget {
               ),
             ]),
           ),
-        ]),
-      ),
+        ),
+      ]),
     );
   }
 }

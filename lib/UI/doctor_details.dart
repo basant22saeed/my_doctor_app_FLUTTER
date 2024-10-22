@@ -67,7 +67,7 @@ class DoctorDetails extends StatelessWidget {
 
               // موقع الدكتور
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 15.0),
+                padding: const EdgeInsets.only(top: 15.0),
                 child: Row(children: [
                   Image.asset('assets/icons/location.png',
                       width: 30, height: 30),

@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:my_doctor_app/UI/branch_details.dart';
 
 class Tile extends StatelessWidget {
   Tile({
@@ -39,7 +40,8 @@ class Tile extends StatelessWidget {
             ),
           ),
           trailing: IconButton(
-            onPressed: () {},
+            onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const BranchDetails())),
             icon: tileIcon,
           ),
         ),
